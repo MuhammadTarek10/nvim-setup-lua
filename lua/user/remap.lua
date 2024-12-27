@@ -4,7 +4,7 @@ return {
   opts = {
     mappings = {
       n = {
-        ["<leader>s"] = [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+        ["<leader>s"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], desc = "Replace word under cursor" },
       },
       v = {
         J = ":m '>+1<CR>gv=gv",
