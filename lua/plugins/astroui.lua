@@ -333,6 +333,14 @@ return {
         IlluminatedWordWrite = { bg = "#3e4452", underline = false },
 
         -- Telescope
+        TelescopeNormal = { bg = "none" },
+        TelescopeBorder = { bg = "none", fg = "#88C0D0" },
+        TelescopePromptNormal = { bg = "none" },
+        TelescopePromptBorder = { bg = "none" },
+        TelescopeResultsNormal = { bg = "none" },
+        TelescopeResultsBorder = { bg = "none" },
+        TelescopePreviewNormal = { bg = "none" },
+        TelescopePreviewBorder = { bg = "none" },
         TelescopePromptCounter = { fg = "#61afef" },
         TelescopeMatching = { fg = "#ebefea" },
         TelescopePreviewMatch = { fg = "#ebefea" },
