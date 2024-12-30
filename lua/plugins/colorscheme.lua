@@ -23,4 +23,16 @@ return {
     "https://github.com/Mofiqul/dracula.nvim",
     name = "dracula",
   },
+  {
+    "https://github.com/AlexvZyl/nordic.nvim",
+    name = "nordic",
+  },
+  {
+    "https://github.com/catppuccin/nvim",
+    name = "catppuccin",
+  },
+  {
+    "https://github.com/folke/tokyonight.nvim",
+    name = "tokyonight",
+  },
 }

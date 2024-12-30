@@ -9,7 +9,7 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "cyberdream",
+    colorscheme = "catppuccin",
     -- make keyworrds italic
     italic_keywords = false,
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
