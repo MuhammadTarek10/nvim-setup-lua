@@ -9,11 +9,104 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "dracula",
+    colorscheme = "cyberdream",
+    -- make keyworrds italic
+    italic_keywords = false,
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       init = { -- this table overrides highlights in all themes
-        -- Normal = { bg = "#000000" },
+        Normal = { bg = "none" },
+        SignColumn = { bg = "none" },
+        FoldColumn = { bg = "none" },
+        NormalFloat = { bg = "none" },
+        NormalNC = { bg = "none" },
+        NormalSB = { bg = "none" },
+        FloatBorder = { bg = "none" },
+        FloatTitle = { fg = "#F2F3F5", bg = "none" },
+
+        -- Visial
+        Visual = { bg = "#4e8c4a", fg = "#F2F3F5", bold = true },
+        VisualNOS = { bg = "#4e8c4a", fg = "#F2F3F5", bold = true },
+
+        -- WinBar
+        WinBar = { bg = "none" },
+        WinSeparator = { fg = "#F2F3F5", bg = "none" },
+        WinBarNC = { bg = "none" },
+        WhichKeyFloat = { bg = "none" },
+
+        -- Telescope
+        TelescopeBorder = { bg = "none" },
+        TelescopePromptTitle = { bg = "none" },
+        TelescopePromptBorder = { bg = "none" },
+        TelescopeNormal = { bg = "none" },
+
+        -- Diagnosis
+        DiagnosticVirtualTextHint = { fg = "#F2F3F5", bg = "none" },
+        DiagnosticVirtualTextWarn = { fg = "#e0af68", bg = "none" },
+        DiagnosticVirtualTextInfo = { fg = "#9ece6a", bg = "none" },
+        DiagnosticVirtualTextError = { fg = "#bd2c00", bg = "none" },
+
+        -- NeoTree
+        NeoTreeNormal = { bg = "none" },
+        NeoTreeNormalNC = { bg = "none" },
+        NeoTreeTabInactive = { bg = "none" },
+        NeoTreeTabSeperatorActive = { fg = "#F2F3F5", bg = "none" },
+        NeoTreeTabSeperatorInactive = { fg = "#F2F3F5", bg = "none" },
+        NvimTreeTabSeperatorActive = { fg = "#F2F3F5", bg = "none" },
+        NvimTreeTabSeperatorInactive = { fg = "#F2F3F5", bg = "none" },
+        MiniTabLineFill = { fg = "#F2F3F5", bg = "none" },
+
+        NeoTreeCursorLine = { bg = "#3e4451", fg = "#F2F3F5" },
+        NeoTreeCursorLineNC = { bg = "#3e4451", fg = "#F2F3F5" },
+
+        -- Spectre
+        DiffChange = { fg = "#F2F3F5", bg = "#050a30" },
+        DiffDelete = { fg = "#F2F3F5", bg = "#bd2c00" },
+
+        -- StatusLine
+        StatusLine = { fg = "#F2F3F5", bg = "none" },
+        StatusLineNC = { fg = "#F2F3F5", bg = "none" },
+        StatusLineTerm = { fg = "#F2F3F5", bg = "none" },
+        StatusLineTermNC = { fg = "#F2F3F5", bg = "none" },
+        VertSplit = { fg = "#F2F3F5", bg = "none" },
+
+        -- QuickFixLine
+        QuickFixLine = { bg = "none" },
+
+        -- TabLine
+        TabLine = { bg = "#BCD8C1" },
+        TabLineSel = { bg = "none" },
+        TabLineFill = { bg = "none" },
+
+        -- Cursor
+        LineNr = { fg = "#81A1C1", bg = "none" },
+        CursorLineNr = { fg = "#88C0D0", bg = "none", bold = true },
+        CursorLine = { bg = "#2E3440", fg = "none" },
+        CursorColumn = { bg = "#2E3440", fg = "none" },
+        Cursor = { bg = "#e4e4e4", fg = "#2c3e50", bold = true },
+
+        -- Search
+        Search = { bg = "green" },
+        IncSearch = { bg = "green" },
+
+        -- Pmenu
+        Pmenu = { bg = "none", fg = "#F2F3F5" },
+        PmenuSel = { bg = "#3e4451", fg = "#F2F3F5", bold = true },
+        PmenuSbar = { bg = "none" },
+        PmenuThumb = { bg = "none" },
+
+        -- Notifications
+        NotifyINFOBody = { bg = "none" },
+        NotifyWARNBody = { bg = "none" },
+        NotifyERRORBody = { bg = "none" },
+        NotifyDEBUGBody = { bg = "none" },
+        NotifyTRACEBody = { bg = "none" },
+        NotifyINFOBorder = { bg = "none" },
+        NotifyWARNBorder = { bg = "none" },
+        NotifyERRORBorder = { bg = "none" },
+        NotifyDEBUGBorder = { bg = "none" },
+        NotifyTRACEBorder = { bg = "none" },
+        NotifyBackground = { bg = "#000000" },
       },
       astrotheme = { -- a table of overrides/changes when applying the astrotheme theme
         -- Highlight groups are set to match the OG AstroNvim's theme
