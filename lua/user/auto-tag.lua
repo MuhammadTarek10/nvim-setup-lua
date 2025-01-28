@@ -1,0 +1,25 @@
+return {
+  "windwp/nvim-ts-autotag",
+  name = "auto-tag",
+  opts = {
+    filetypes = {
+      "html",
+      "xml",
+      "javascript",
+      "typescript",
+      "javascriptreact",
+      "typescriptreact",
+      "svelte",
+      "vue",
+      "tsx",
+      "jsx",
+      "rescript",
+      "reason",
+      "php",
+      "markdown",
+      "glimmer",
+      "handlebars",
+      "hbs",
+    },
+  },
+}
