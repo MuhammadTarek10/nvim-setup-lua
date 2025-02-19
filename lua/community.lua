@@ -9,12 +9,8 @@ return {
   -- import/override with your plugins folder
   -- heirline
   { import = "astrocommunity.recipes.heirline-vscode-winbar" },
-  -- codesnap
-  { import = "astrocommunity.media.codesnap-nvim" },
   -- Markdown Previewer
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
-  -- Codium
-  { import = "astrocommunity.completion.codeium-vim" },
   {
     "mistricky/codesnap.nvim",
     build = "make",
