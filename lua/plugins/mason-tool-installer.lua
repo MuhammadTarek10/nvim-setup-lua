@@ -8,19 +8,24 @@ return {
     opts = {
       ensure_installed = {
         -- Language Servers
+        "lua_ls",
         "clangd",
         "cssls",
-        "html",
+        "emmet_ls",
+        "tailwindcss",
         "marksman",
         "jsonls",
         "basedpyright",
         "rust_analyzer",
         "sqlls",
-        "lua_ls",
-        "vtsls",
+        "ts_ls",
         "yamlls",
         "texlab",
         "omnisharp",
+        "angularls",
+        "docker_compose_language_service",
+        "dockerls",
+        "gopls",
 
         -- Linters
         -- "ansible-lint",
@@ -29,11 +34,11 @@ return {
         -- "flake8",
 
         -- Formatters
+        "prettier",
+        "stylua",
+        "black",
         -- "clang-format",
-        -- "prettier",
-        -- "black",
         -- "isort",
-        -- "stylua",
 
         -- Debuggers
         -- "bash-debug-adapter",

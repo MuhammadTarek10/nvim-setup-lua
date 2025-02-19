@@ -15,6 +15,8 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+vim.api.nvim_set_keymap("i", "<Tab>", "copilot#Accept()", { expr = true, noremap = true })
+
 require "lazy_setup"
 require "polish"
 require "transparent"
