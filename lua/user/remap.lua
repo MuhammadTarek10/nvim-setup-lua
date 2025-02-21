@@ -3,10 +3,10 @@ return {
   ---@type AstroCoreOpts
   opts = {
     mappings = {
-      i = {
-      },
+      i = {},
       n = {
         ["<leader>s"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], desc = "Replace word under cursor" },
+        ["<C-A>"] = { "ggVG", desc = "Select all" },
       },
       v = {
         J = ":m '>+1<CR>gv=gv",
