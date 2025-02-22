@@ -15,10 +15,17 @@ return {
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
   {
-    "jay-babu/mason-null-ls.nvim",
+    "jose-elias-alvarez/null-ls.nvim",
+    dependencies = { "jay-babu/mason-null-ls.nvim" },
     -- overrides `require("mason-null-ls").setup(...)`
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
+      local null_ls = require "null-ls"
+      opts.sources = {}
+      null_ls.builtins.formatting.prettier.with {
+        filetypes = { "html", "css", "javascript", "typescript", "json", "yaml", "markdown" },
+        extra_args = { "--print-width", "120" }, -- Customize Prettier behavior
+      }
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         -- add more arguments for adding more null-ls sources
       })
