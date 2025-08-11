@@ -6,5 +6,6 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.completion.codeium-vim" },
   -- import/override with your plugins folder
 }
