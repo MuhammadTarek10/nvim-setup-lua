@@ -4,11 +4,18 @@ return {
   opts = {
     mappings = {
       i = {
+        ["jj"] = { "<Esc>", desc = "Exit insert mode with jj" },
         ["<C-l>"] = {
           function() return vim.fn["codeium#Accept"]() end,
           expr = true,
           silent = true,
           desc = "Accept Codeium suggestion",
+        },
+        ["<C-j>"] = {
+          function() return vim.fn["codeium#CycleCompletions"](-1) end,
+          expr = true,
+          silent = true,
+          desc = "Previous Codeium suggestion",
         },
         ["<C-x>"] = {
           function() return vim.fn["codeium#Clear"]() end,
